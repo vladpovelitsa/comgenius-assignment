@@ -1,0 +1,40 @@
+.wrapper {
+    position: relative;
+}
+.toggler {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+.toggler:hover {
+    color: var(--brand-color);
+}
+.toggler:active {
+    opacity: .7;
+}
+.content {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 10px;
+    min-width: 200px;
+    border: 1px solid rgb(var(--neutral-color));
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(var(--neutral-color));
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    scale: 1 0;
+    transform-origin: top;
+    transition: .3s;
+}
+.content.contentOpen {
+    scale: 1;
+}

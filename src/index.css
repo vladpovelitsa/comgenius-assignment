@@ -1,0 +1,15 @@
+:root {
+  --brand-color: #00ade6;
+  --main-color: 0,0,0;
+  --secondry-color: 255,255,255;
+  --neutral-color: 240,240,240;
+  --shadow: 0 0 5px rgba(var(--main-color), .3);
+
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: rgb(var(--main-color));
+  background-color: rgb(var(--secondry-color));
+}

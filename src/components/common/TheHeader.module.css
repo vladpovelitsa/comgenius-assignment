@@ -1,0 +1,62 @@
+:root {
+    --padding-size: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--padding-size);
+    position: relative;
+    background: var(--secondry-color);
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+    gap: 20px;
+
+}
+.logo {
+    display: block;
+    transition: .3s;
+    max-width: 30px;
+}
+.logo:hover,
+.logo:focus {
+    opacity: .7;
+}
+.logo:active {
+    opacity: .5;
+}
+.logo img {
+    display: block;
+    max-width: 100%;
+}
+.currentPage {
+    align-self: stretch;
+    padding: var(--padding-size) 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    box-sizing: border-box;
+
+}
+.currentPage:after {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: var(--brand-color);
+    height: 2px;
+}
+@media screen and (min-width: 1080px) {
+    .header {
+        gap: 40px;
+    }
+    .currentPage {
+        display: none;
+    }
+}
