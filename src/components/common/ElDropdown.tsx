@@ -9,7 +9,7 @@ function ElDropdown({label, children}: {label:string, children: JSX.Element}) {
 
     return (
         <div className={classes.wrapper}>
-            <button onClick={handleOpening} onBlur={handleOpening} className={classes.toggler}>
+            <button onClick={handleOpening} className={classes.toggler}>
                 {label} {isOpen ?<ChevronUp /> : <ChevronDown/>}
             </button>
             <div className={`${classes.content} ${isOpen ? classes.contentOpen : ''}`}>

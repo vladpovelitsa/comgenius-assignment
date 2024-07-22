@@ -11,6 +11,7 @@
     position: relative;
     z-index: 6;
     cursor: pointer;
+    color: rgb(var(--main-color));
 
 }
 .content {

@@ -4,12 +4,22 @@
   --secondry-color: 255,255,255;
   --neutral-color: 240,240,240;
   --shadow: 0 0 5px rgba(var(--main-color), .3);
-
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
+
+}
+.app {
   color: rgb(var(--main-color));
   background-color: rgb(var(--secondry-color));
+  min-height: 100vh;
+}
+.dark {
+  --main-color: 255,255,255;
+  --secondry-color: 51,51,51;
+  --neutral-color: 98,98,98;
+  --shadow: 0 0 5px rgba(var(--main-color), .3);
+
 }
